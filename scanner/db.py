@@ -1,0 +1,15 @@
+import os
+from dotenv import load_dotenv
+import psycopg2
+load_dotenv()
+
+def get_connection():
+    return psycopg2.connect(
+        host=os.environ["DB_HOST"],
+        port=os.environ.get("DB_PORT", "5432"),
+        dbname=os.environ["DB_NAME"],
+        user=os.environ["DB_USER"],
+        password=os.environ["DB_PASSWORD"],
+        application_name="guajiranet_data_discovery_readonly",
+        options="-c default_transaction_read_only=on"
+    )
