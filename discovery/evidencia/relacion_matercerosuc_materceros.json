@@ -1,0 +1,572 @@
+{
+  "schema": "bronze_guajiranet",
+  "child_table": "matercerosuc",
+  "parent_table": "materceros",
+  "join_column": "nit",
+  "read_only": true,
+  "field_meaning_inferred": false,
+  "child": {
+    "row_count": 15389,
+    "distinct_join_keys": 14938,
+    "null_join_key_rows": 0,
+    "rows_per_join_key": {
+      "min": 1,
+      "max": 38,
+      "avg": 1.0302,
+      "keys_with_1_row": 14661,
+      "keys_with_2_rows": 233,
+      "keys_with_3_or_more_rows": 44
+    }
+  },
+  "parent": {
+    "row_count": 14938,
+    "distinct_join_keys": 14938,
+    "null_join_key_rows": 0,
+    "join_key_unique": true,
+    "join_keys_without_child": 0
+  },
+  "coverage": {
+    "child_keys_found_in_parent": 14938,
+    "child_keys_missing_in_parent": 0,
+    "missing_key_row_count": 0,
+    "coverage_pct": 100.0,
+    "missing_key_sample": []
+  },
+  "cardinality": {
+    "from_child_to_parent": "N:1",
+    "parent_join_key_unique": true,
+    "child_max_rows_per_key": 38
+  },
+  "uniqueness": [
+    {
+      "columns": [
+        "nit",
+        "idsuc"
+      ],
+      "row_count": 15389,
+      "distinct_count": 15389,
+      "null_in_key_rows": 0,
+      "is_unique": true,
+      "duplicate_group_count": 0,
+      "duplicate_sample": []
+    },
+    {
+      "columns": [
+        "nit",
+        "id"
+      ],
+      "row_count": 15389,
+      "distinct_count": 15389,
+      "null_in_key_rows": 0,
+      "is_unique": true,
+      "duplicate_group_count": 0,
+      "duplicate_sample": []
+    }
+  ],
+  "focus_columns": [
+    {
+      "column": "idcontrato",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 61,
+      "null_count": 4452,
+      "non_null_count": 10937,
+      "distinct_count": 10935,
+      "unique_among_non_null": false,
+      "sample": [
+        "9b2845fc-7abb-4815-906b-d99dd67d4cc8",
+        "6bc212a6-40f5-4cc5-8fb7-f90895fdbac4",
+        "a74ec938-4d8d-4b3f-8db0-46a9acef4936",
+        "3e18a14b-517f-4006-9768-6202a10f71e8",
+        "a7c657c4-2f44-4b47-b8b9-981d5045c08c",
+        "5559e269-8067-4858-8805-7f18bb0ddb40",
+        "2c68805b-0c37-4807-a2d1-5e9284e743be",
+        "4b3a109f-a65a-4671-b418-0085eaeb1716",
+        "b302ba41-87c4-4cd8-937c-c8fd62a91868",
+        "e404ca8f-f376-4be6-9778-139edf1cf66a"
+      ],
+      "duplicate_non_null_sample": [
+        {
+          "value": "8fa604c6-77d2-41fe-9109-a7160ade28f9",
+          "count": 2
+        },
+        {
+          "value": "6bc212a6-40f5-4cc5-8fb7-f90895fdbac4",
+          "count": 2
+        }
+      ],
+      "duplicate_non_null_group_count": 2
+    },
+    {
+      "column": "idperfilcartera",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 63,
+      "null_count": 1146,
+      "non_null_count": 14243,
+      "distinct_count": 17,
+      "unique_among_non_null": false,
+      "sample": [
+        1,
+        1,
+        11,
+        18,
+        1,
+        21,
+        22,
+        11,
+        1,
+        11
+      ],
+      "distribution": [
+        {
+          "value": 11,
+          "count": 5763
+        },
+        {
+          "value": 1,
+          "count": 4008
+        },
+        {
+          "value": 18,
+          "count": 2921
+        },
+        {
+          "value": 21,
+          "count": 822
+        },
+        {
+          "value": 4,
+          "count": 219
+        },
+        {
+          "value": 5,
+          "count": 113
+        },
+        {
+          "value": 22,
+          "count": 81
+        },
+        {
+          "value": 9,
+          "count": 69
+        },
+        {
+          "value": 8,
+          "count": 48
+        },
+        {
+          "value": 16,
+          "count": 45
+        },
+        {
+          "value": 6,
+          "count": 32
+        },
+        {
+          "value": 10,
+          "count": 32
+        },
+        {
+          "value": 7,
+          "count": 30
+        },
+        {
+          "value": 2,
+          "count": 24
+        },
+        {
+          "value": 12,
+          "count": 18
+        },
+        {
+          "value": 0,
+          "count": 17
+        },
+        {
+          "value": 13,
+          "count": 1
+        }
+      ],
+      "duplicate_non_null_sample": [
+        {
+          "value": 11,
+          "count": 5763
+        },
+        {
+          "value": 1,
+          "count": 4008
+        },
+        {
+          "value": 18,
+          "count": 2921
+        },
+        {
+          "value": 21,
+          "count": 822
+        },
+        {
+          "value": 4,
+          "count": 219
+        },
+        {
+          "value": 5,
+          "count": 113
+        },
+        {
+          "value": 22,
+          "count": 81
+        },
+        {
+          "value": 9,
+          "count": 69
+        },
+        {
+          "value": 8,
+          "count": 48
+        },
+        {
+          "value": 16,
+          "count": 45
+        }
+      ],
+      "duplicate_non_null_group_count": 16
+    },
+    {
+      "column": "idperfilcartera_anterior",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 70,
+      "null_count": 13039,
+      "non_null_count": 2350,
+      "distinct_count": 7,
+      "unique_among_non_null": false,
+      "sample": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        1,
+        21,
+        9
+      ],
+      "distribution": [
+        {
+          "value": 21,
+          "count": 1583
+        },
+        {
+          "value": 1,
+          "count": 539
+        },
+        {
+          "value": 11,
+          "count": 201
+        },
+        {
+          "value": 4,
+          "count": 14
+        },
+        {
+          "value": 9,
+          "count": 8
+        },
+        {
+          "value": 8,
+          "count": 4
+        },
+        {
+          "value": 0,
+          "count": 1
+        }
+      ],
+      "duplicate_non_null_sample": [
+        {
+          "value": 21,
+          "count": 1583
+        },
+        {
+          "value": 1,
+          "count": 539
+        },
+        {
+          "value": 11,
+          "count": 201
+        },
+        {
+          "value": 4,
+          "count": 14
+        },
+        {
+          "value": 9,
+          "count": 8
+        },
+        {
+          "value": 8,
+          "count": 4
+        }
+      ],
+      "duplicate_non_null_group_count": 6
+    },
+    {
+      "column": "fecharetiroisp",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 71,
+      "null_count": 13040,
+      "non_null_count": 2349,
+      "distinct_count": 13,
+      "unique_among_non_null": false,
+      "sample": [
+        "2026-05-01",
+        "2026-02-01",
+        "2026-01-02",
+        "2026-03-01",
+        "2026-08-01",
+        "2026-03-01",
+        "2026-03-01",
+        "2026-04-01",
+        "2026-08-01",
+        "2026-05-01"
+      ],
+      "min": "2025-11-01",
+      "max": "2026-08-01",
+      "min_value_count": 246,
+      "distribution": [
+        {
+          "value": "2026-01-02",
+          "count": 323
+        },
+        {
+          "value": "2026-03-01",
+          "count": 317
+        },
+        {
+          "value": "2026-08-01",
+          "count": 290
+        },
+        {
+          "value": "2025-11-01",
+          "count": 246
+        },
+        {
+          "value": "2026-02-01",
+          "count": 232
+        },
+        {
+          "value": "2026-07-01",
+          "count": 215
+        },
+        {
+          "value": "2025-12-01",
+          "count": 199
+        },
+        {
+          "value": "2026-06-01",
+          "count": 182
+        },
+        {
+          "value": "2026-05-01",
+          "count": 176
+        },
+        {
+          "value": "2026-04-01",
+          "count": 163
+        },
+        {
+          "value": "2026-02-02",
+          "count": 4
+        },
+        {
+          "value": "2026-04-02",
+          "count": 1
+        },
+        {
+          "value": "2026-01-03",
+          "count": 1
+        }
+      ],
+      "duplicate_non_null_sample": [
+        {
+          "value": "2026-01-02",
+          "count": 323
+        },
+        {
+          "value": "2026-03-01",
+          "count": 317
+        },
+        {
+          "value": "2026-08-01",
+          "count": 290
+        },
+        {
+          "value": "2025-11-01",
+          "count": 246
+        },
+        {
+          "value": "2026-02-01",
+          "count": 232
+        },
+        {
+          "value": "2026-07-01",
+          "count": 215
+        },
+        {
+          "value": "2025-12-01",
+          "count": 199
+        },
+        {
+          "value": "2026-06-01",
+          "count": 182
+        },
+        {
+          "value": "2026-05-01",
+          "count": 176
+        },
+        {
+          "value": "2026-04-01",
+          "count": 163
+        }
+      ],
+      "duplicate_non_null_group_count": 11
+    },
+    {
+      "column": "finiciopermanencia",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 66,
+      "null_count": 4356,
+      "non_null_count": 11033,
+      "distinct_count": 641,
+      "unique_among_non_null": false,
+      "sample": [
+        "2026-07-28",
+        "2026-08-13",
+        "2025-05-16",
+        "2026-04-14",
+        "2025-06-27",
+        "2025-03-21",
+        "2025-03-25",
+        "2025-11-22",
+        "2025-10-15",
+        "2025-01-09"
+      ],
+      "min": "1899-12-30",
+      "max": "2026-08-22",
+      "min_value_count": 936,
+      "duplicate_non_null_sample": [
+        {
+          "value": "1899-12-30",
+          "count": 936
+        },
+        {
+          "value": "2025-10-31",
+          "count": 61
+        },
+        {
+          "value": "2025-08-26",
+          "count": 58
+        },
+        {
+          "value": "2025-10-01",
+          "count": 55
+        },
+        {
+          "value": "2025-05-14",
+          "count": 51
+        },
+        {
+          "value": "2025-05-15",
+          "count": 49
+        },
+        {
+          "value": "2025-10-07",
+          "count": 47
+        },
+        {
+          "value": "2025-10-30",
+          "count": 44
+        },
+        {
+          "value": "2025-07-10",
+          "count": 44
+        },
+        {
+          "value": "2025-08-27",
+          "count": 43
+        }
+      ],
+      "duplicate_non_null_group_count": 627
+    },
+    {
+      "column": "activo",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 38,
+      "null_count": 0,
+      "non_null_count": 15389,
+      "distinct_count": 2,
+      "unique_among_non_null": false,
+      "sample": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S"
+      ],
+      "distribution": [
+        {
+          "value": "S",
+          "count": 15371
+        },
+        {
+          "value": "N",
+          "count": 18
+        }
+      ],
+      "duplicate_non_null_sample": [
+        {
+          "value": "S",
+          "count": 15371
+        },
+        {
+          "value": "N",
+          "count": 18
+        }
+      ],
+      "duplicate_non_null_group_count": 2
+    }
+  ],
+  "observed_cooccurrence": {
+    "idperfilcartera_vs_anterior": {
+      "both_not_null_and_equal": 323,
+      "both_not_null_and_different": 2027,
+      "anterior_not_null_current_null": 0
+    },
+    "activo_vs_fecharetiroisp_null": [
+      {
+        "activo": "N",
+        "fecharetiroisp_is_null": true,
+        "count": 18
+      },
+      {
+        "activo": "S",
+        "fecharetiroisp_is_null": false,
+        "count": 2349
+      },
+      {
+        "activo": "S",
+        "fecharetiroisp_is_null": true,
+        "count": 13022
+      }
+    ]
+  }
+}

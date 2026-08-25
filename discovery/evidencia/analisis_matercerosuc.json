@@ -1,0 +1,2127 @@
+{
+  "schema": "bronze_guajiranet",
+  "table": "matercerosuc",
+  "row_count": 15389,
+  "columns": [
+    {
+      "column": "nit",
+      "data_type": "integer",
+      "nullable": "NO",
+      "position": 1,
+      "null_count": 0,
+      "distinct_count": 14938,
+      "sample": [
+        1,
+        190629,
+        226052,
+        264065,
+        276076,
+        278141,
+        323929,
+        366334,
+        567895,
+        599079
+      ]
+    },
+    {
+      "column": "idsuc",
+      "data_type": "smallint",
+      "nullable": "NO",
+      "position": 2,
+      "null_count": 0,
+      "distinct_count": 38,
+      "sample": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "column": "razonsocial",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 3,
+      "null_count": 0,
+      "distinct_count": 14990,
+      "sample": [
+        "Ngulube Tarubva",
+        "Orozco Ortega Julieth Paola",
+        "Leon Bustamante Ana Isabel",
+        "Oviedo Polanco Magalys Coromoto",
+        "Rey Romero Angie Dayana",
+        "Parra Alvarez Marieli Yesseth",
+        "Diaz Diaz Julio Francisco",
+        "Fuentes Martinez Harol Alfredo",
+        "Montiel lopez Noralis Teresa",
+        "Maestre Cuello Carlos Julio"
+      ]
+    },
+    {
+      "column": "dpto",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 4,
+      "null_count": 0,
+      "distinct_count": 21,
+      "sample": [
+        "44",
+        "44",
+        "44",
+        "44",
+        "08",
+        "44",
+        "44",
+        "44",
+        "44",
+        "44"
+      ]
+    },
+    {
+      "column": "departamento",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 5,
+      "null_count": 0,
+      "distinct_count": 34,
+      "sample": [
+        "La Guajira",
+        "La Guajira",
+        "La Guajira",
+        "La Guajira",
+        "Atlántico",
+        "La Guajira",
+        "La Guajira",
+        "La Guajira",
+        "La Guajira",
+        "La Guajira"
+      ]
+    },
+    {
+      "column": "mun",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 6,
+      "null_count": 0,
+      "distinct_count": 46,
+      "sample": [
+        "035",
+        "650",
+        "378",
+        "650",
+        "001",
+        "650",
+        "650",
+        "650",
+        "098",
+        "650"
+      ]
+    },
+    {
+      "column": "ciudad",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 7,
+      "null_count": 0,
+      "distinct_count": 91,
+      "sample": [
+        "Albania",
+        "San Juan Del Cesar",
+        "Hatonuevo",
+        "San Juan Del Cesar",
+        "Barranquilla",
+        "San Juan Del Cesar",
+        "San Juan Del Cesar",
+        "San Juan Del Cesar",
+        "Distraccion",
+        "San Juan Del Cesar"
+      ]
+    },
+    {
+      "column": "direccion1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 8,
+      "null_count": 32,
+      "distinct_count": 14906,
+      "sample": [
+        "Sauces 4, Apto #203",
+        "Trans 7 SUR # 8-12",
+        "CL 22A  CR 10B - 32",
+        "KRA 1 D OESTE # 2 SUR - 61",
+        "CLL 100 # 18 Sur 100 Torre 6 Apto  721 isla ",
+        "KRA 1 # 3 - 107",
+        "CL 2 SUR 16 64 APTO1",
+        "CLL 9 #8-19 APT 4",
+        "KRA 9 # 13 - 56",
+        "Kra 7 # 18-25"
+      ]
+    },
+    {
+      "column": "direccion2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 9,
+      "null_count": 2001,
+      "distinct_count": 8898,
+      "sample": [
+        "Sauces 4, Apto #203",
+        "Trans 7 SUR # 8-12",
+        "CL 22A  CR 10B - 32",
+        "KRA 1 D OESTE # 2 SUR - 61",
+        "KRA 1  # 3 - 107",
+        "CL 2 SUR 16 64 APTO1",
+        "CLL 9 #8-19 APT 4",
+        "KRA 9 # 13 - 56",
+        "Kra 7 # 18-25",
+        "CLE 10 SUR # 11 - 39"
+      ]
+    },
+    {
+      "column": "comentarios",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 10,
+      "null_count": 1885,
+      "distinct_count": 9380,
+      "sample": [
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 700 MEGAS POR UN VALOR DE $150.000 MIL PESOS ENTREGADO_CUADRILLA JADER RAMOS EL DIA 28-7-26\r\n",
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 150 MEGAS POR UN VALOR DE $58.000 MIL PESOS ENTREGADO_CUADRILLA SAN JUAN 21 EL DIA 13-8-26\r\n",
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 25 MEGAS POR PROYECTO MINTIC ENTREGADO POR JERMINSON CARDONA EL DIA 16/05/2025 P\r\n",
+        "CLIENTE SE LE ENTREGAN ONUS EN COMODATO CON UN PLAN DE 150 MEGAS POR UN VALOR DE $58.000 MIL PESOS ENTREGADO_CUADRILLA DAVID ALVAREZ EL DIA 14-4-26\r\nCLIENTE SE LE BORRA EL CONTRATO EL DIA 14/07/26 PAZ Y SALVO\r\nIP ANTERIOR: 10.71.16.126\r\nINICIO: 14/04/2026\r\nSN:HWTCA27315B3\r\n",
+        "CLIENTE SE LE ENTREGAN ONUS EN COMODATO CON UN PLAN DE 250 MEGAS POR UN VALOR DE $80.000 MIL PESOS ENTREGADO POR_FABIO QUILLA\r\n",
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 25 MEGAS POR PROYECTO MINTIC ENTREGADO POR DAVID ALVAREZ EL DIA 21-3-25\r\nCLIENTE SE LE BORRA EL CONTRATO EL DIA 29/09/25 PAZ Y SALVO\r\nIP ANTERIOR: 10.70.5.136\r\nINICIO: 21/03/2025\r\nSN: FHTT3AE3653D\r\n",
+        "25/11/2025 Cliente no quiere el servicio de acuerdo archivo actulizado enviado por Loraine.\r\n",
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 25 MEGAS POR PROYECTO MINTIC ENTREGADO POR DAVID ALVAREZ EL DIA 25-3-25\r\nCLIENTE SE TRASLADA DE CL 16A CR 13 - 70 MZ F CS 12 HACIA CLL 9 #8-19 APT 4 BARRIO EL NORTE POR_KEINER BAQUERO_P\r\n",
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 25 MEGAS POR PROYECTO MINTIC ENTREGADO POR_FREYLER_P8\r\n",
+        "CLIENTE SE LE ENTREGA ONUS EN COMODATO CON UN PLAN DE 25 MEGAS POR PROYECTO MINTIC ENTREGADO POR_JERMINJSON CARDONA  EL DIA 15/10/2025\r\n"
+      ]
+    },
+    {
+      "column": "idzona",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 11,
+      "null_count": 15386,
+      "distinct_count": 2,
+      "sample": [
+        3,
+        0,
+        3
+      ],
+      "distribution": [
+        {
+          "value": 3,
+          "count": 2
+        },
+        {
+          "value": 0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "contacto1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 12,
+      "null_count": 15322,
+      "distinct_count": 45,
+      "sample": [
+        "3215626220",
+        " 7274304",
+        "3103535282",
+        "3178420353",
+        "3147908601",
+        "3114046428",
+        "6013444888",
+        "3123244973",
+        "3174765065",
+        "3003455035"
+      ]
+    },
+    {
+      "column": "contacto2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 13,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "contacto3",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 14,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "cargo1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 15,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "cargo2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 16,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "cargo3",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 17,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctotel1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 18,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctotel2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 19,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctotel3",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 20,
+      "null_count": 14316,
+      "distinct_count": 2,
+      "sample": [
+        ".",
+        ".",
+        ".",
+        ".",
+        ".",
+        ".",
+        ".",
+        ".",
+        ".",
+        "."
+      ],
+      "distribution": [
+        {
+          "value": ".",
+          "count": 1050
+        },
+        {
+          "value": "",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "column": "ctomovil1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 21,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctomovil2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 22,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctomovil3",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 23,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctoemail1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 24,
+      "null_count": 15057,
+      "distinct_count": 221,
+      "sample": [
+        "ljadistrireouesto@hotmail.com",
+        "carlos@gmail.com",
+        "",
+        "wfuentes_mg21@hotmail.com",
+        "eldiisyarley@gmail.com",
+        "info@smartolt.com",
+        "estertorres.0708@gmail.ocm",
+        "estaciondeserviciola21@gmail.com",
+        "",
+        "nasaiyay@gmail.com"
+      ]
+    },
+    {
+      "column": "ctoemail2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 25,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "ctoemail3",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 26,
+      "null_count": 15219,
+      "distinct_count": 145,
+      "sample": [
+        "juliethpaolaorozcoortega@gmail.com",
+        "diosmarortiz7@gmail.com",
+        "saidetharias10@gmail.com",
+        "keineralvertor@gmail.com",
+        "naudileth990@gmail.com",
+        "yonerjose@icloud.com",
+        "harolmendozaa@gmail.com",
+        "fmrp881015@gmail.com",
+        "Jromeromachado@gmail.com",
+        "Yeimaris69@hotmail.com"
+      ]
+    },
+    {
+      "column": "telefono1",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 27,
+      "null_count": 466,
+      "distinct_count": 13826,
+      "sample": [
+        "3116193113",
+        "3014236325",
+        "3017634006",
+        " 3102301901",
+        "3046669288",
+        "3105143480",
+        " 3012341749",
+        "3018069621",
+        "3001480518",
+        "3005530430"
+      ]
+    },
+    {
+      "column": "telefono2",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 28,
+      "null_count": 10895,
+      "distinct_count": 49,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "column": "telefono3",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 29,
+      "null_count": 15331,
+      "distinct_count": 32,
+      "sample": [
+        "3126559260",
+        "3042019695",
+        "3232885759",
+        "3167092150",
+        "",
+        "300 9833499",
+        "6057772747",
+        "3123244973",
+        "3006856192",
+        ""
+      ]
+    },
+    {
+      "column": "fax",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 30,
+      "null_count": 10901,
+      "distinct_count": 10,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 4478
+        },
+        {
+          "value": "7272416",
+          "count": 2
+        },
+        {
+          "value": "3043342719",
+          "count": 1
+        },
+        {
+          "value": "yecaar9706@gmail.com",
+          "count": 1
+        },
+        {
+          "value": "3007924139",
+          "count": 1
+        },
+        {
+          "value": "3116541795",
+          "count": 1
+        },
+        {
+          "value": "3114295425",
+          "count": 1
+        },
+        {
+          "value": "3006416202",
+          "count": 1
+        },
+        {
+          "value": "3206998186",
+          "count": 1
+        },
+        {
+          "value": "3126620023",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "movil",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 31,
+      "null_count": 307,
+      "distinct_count": 14002,
+      "sample": [
+        "3003524053",
+        "3116193113",
+        "3014236325",
+        "3017634006",
+        " 3102301901",
+        "3046669288",
+        "3105143480",
+        " 3012341749",
+        "3018069621",
+        "3001480518"
+      ]
+    },
+    {
+      "column": "url",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 32,
+      "null_count": 15367,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "column": "email",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 33,
+      "null_count": 294,
+      "distinct_count": 14630,
+      "sample": [
+        "t.ngulube80@gmail.com",
+        "juliethpaolaorozcoortega@gmail.com",
+        "anaisabelleonbustamante20@gmail.com",
+        "omagaly092@gmail.com",
+        "Angie.rey95@hotmail.com",
+        "parramarieli6@gmail.com",
+        "Samydazad@gmail.com",
+        "harketsal@hotmail.com",
+        "montielsharil@gmail.com",
+        "carlosjuliomaestre2024@gmail.com"
+      ]
+    },
+    {
+      "column": "idvendedor",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 34,
+      "null_count": 4440,
+      "distinct_count": 1,
+      "sample": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distribution": [
+        {
+          "value": 1,
+          "count": 10949
+        }
+      ]
+    },
+    {
+      "column": "idformapago",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 35,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distribution": [
+        {
+          "value": 1,
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "nogeneraiva",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 36,
+      "null_count": 0,
+      "distinct_count": 2,
+      "sample": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "distribution": [
+        {
+          "value": "N",
+          "count": 15388
+        },
+        {
+          "value": "S",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "noreteica",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 37,
+      "null_count": 0,
+      "distinct_count": 2,
+      "sample": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "distribution": [
+        {
+          "value": "N",
+          "count": 15387
+        },
+        {
+          "value": "S",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "column": "activo",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 38,
+      "null_count": 0,
+      "distinct_count": 2,
+      "sample": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S",
+        "S"
+      ],
+      "distribution": [
+        {
+          "value": "S",
+          "count": 15371
+        },
+        {
+          "value": "N",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "column": "extranjero",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 39,
+      "null_count": 0,
+      "distinct_count": 2,
+      "sample": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "distribution": [
+        {
+          "value": "N",
+          "count": 15384
+        },
+        {
+          "value": "S",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "column": "listaprecios",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 40,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distribution": [
+        {
+          "value": 1,
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "reteicac",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 41,
+      "null_count": 13126,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 2263
+        }
+      ]
+    },
+    {
+      "column": "codcliente",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 42,
+      "null_count": 10916,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 4473
+        }
+      ]
+    },
+    {
+      "column": "idconvenio",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 43,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "distribution": [
+        {
+          "value": 0,
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "descuento",
+      "data_type": "numeric",
+      "nullable": "YES",
+      "position": 44,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0"
+      ],
+      "distribution": [
+        {
+          "value": "0.0",
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "cupocreditocc",
+      "data_type": "numeric",
+      "nullable": "YES",
+      "position": 45,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0"
+      ],
+      "distribution": [
+        {
+          "value": "0.0",
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "controlacupo",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 46,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "distribution": [
+        {
+          "value": "N",
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "idbarrio",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 47,
+      "null_count": 2872,
+      "distinct_count": 233,
+      "sample": [
+        23,
+        69,
+        62,
+        178,
+        39,
+        204,
+        248,
+        156,
+        126,
+        241
+      ]
+    },
+    {
+      "column": "diascreditocc",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 48,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "distribution": [
+        {
+          "value": 0,
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "reteica_i",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 49,
+      "null_count": 13125,
+      "distinct_count": 2,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 2263
+        },
+        {
+          "value": "RICA",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "reteica_s",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 50,
+      "null_count": 13126,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 2263
+        }
+      ]
+    },
+    {
+      "column": "reteicac_s",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 51,
+      "null_count": 13126,
+      "distinct_count": 1,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 2263
+        }
+      ]
+    },
+    {
+      "column": "id",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 52,
+      "null_count": 0,
+      "distinct_count": 15386,
+      "sample": [
+        32848,
+        33094,
+        14017,
+        29796,
+        16559,
+        12356,
+        21537,
+        11768,
+        32953,
+        26099
+      ]
+    },
+    {
+      "column": "dctofinanciero",
+      "data_type": "numeric",
+      "nullable": "YES",
+      "position": 53,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0"
+      ],
+      "distribution": [
+        {
+          "value": "0.0",
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "emailfe",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 54,
+      "null_count": 0,
+      "distinct_count": 14695,
+      "sample": [
+        "t.ngulube80@gmail.com",
+        "juliethpaolaorozcoortega@gmail.com",
+        "anaisabelleonbustamante20@gmail.com",
+        "omagaly092@gmail.com",
+        "Angie.rey95@hotmail.com",
+        "parramarieli6@gmail.com",
+        "Samydazad@gmail.com",
+        "harketsal@hotmail.com",
+        "montielsharil@gmail.com",
+        "carlosjuliomaestre2024@gmail.com"
+      ]
+    },
+    {
+      "column": "manflete",
+      "data_type": "character",
+      "nullable": "YES",
+      "position": 55,
+      "null_count": 0,
+      "distinct_count": 1,
+      "sample": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "distribution": [
+        {
+          "value": "N",
+          "count": 15389
+        }
+      ]
+    },
+    {
+      "column": "ctaingreso",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 56,
+      "null_count": 15387,
+      "distinct_count": 2,
+      "sample": [
+        11050511,
+        0
+      ],
+      "distribution": [
+        {
+          "value": 0,
+          "count": 1
+        },
+        {
+          "value": 11050511,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "codpostal",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 57,
+      "null_count": 10880,
+      "distinct_count": 13,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 4476
+        },
+        {
+          "value": "443001",
+          "count": 16
+        },
+        {
+          "value": "444010",
+          "count": 4
+        },
+        {
+          "value": "440007",
+          "count": 2
+        },
+        {
+          "value": "44030",
+          "count": 2
+        },
+        {
+          "value": "443020",
+          "count": 2
+        },
+        {
+          "value": "111811",
+          "count": 1
+        },
+        {
+          "value": "250020",
+          "count": 1
+        },
+        {
+          "value": "444010 ",
+          "count": 1
+        },
+        {
+          "value": "4430",
+          "count": 1
+        },
+        {
+          "value": "080020",
+          "count": 1
+        },
+        {
+          "value": "201008",
+          "count": 1
+        },
+        {
+          "value": "080002",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "estrato",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 58,
+      "null_count": 10901,
+      "distinct_count": 17,
+      "sample": [
+        "",
+        "",
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "HATONUEV"
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 3780
+        },
+        {
+          "value": "2",
+          "count": 225
+        },
+        {
+          "value": "1",
+          "count": 112
+        },
+        {
+          "value": "ALBANIA",
+          "count": 98
+        },
+        {
+          "value": "HATONUEV",
+          "count": 68
+        },
+        {
+          "value": "FONSECA",
+          "count": 64
+        },
+        {
+          "value": "102",
+          "count": 56
+        },
+        {
+          "value": "DISTRACI",
+          "count": 26
+        },
+        {
+          "value": "RIOHACHA",
+          "count": 24
+        },
+        {
+          "value": "7",
+          "count": 9
+        },
+        {
+          "value": "104",
+          "count": 7
+        },
+        {
+          "value": "BARRANQU",
+          "count": 5
+        },
+        {
+          "value": "4",
+          "count": 5
+        },
+        {
+          "value": "PUEBLOBE",
+          "count": 4
+        },
+        {
+          "value": "LA GUAJI",
+          "count": 2
+        },
+        {
+          "value": "DISTRACC",
+          "count": 2
+        },
+        {
+          "value": "BARRANCA",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "zona",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 59,
+      "null_count": 10936,
+      "distinct_count": 9,
+      "sample": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "ALBANIA",
+        "",
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "value": "",
+          "count": 4019
+        },
+        {
+          "value": "ALBANIA",
+          "count": 221
+        },
+        {
+          "value": "HATONUEVO",
+          "count": 119
+        },
+        {
+          "value": "FONSECA",
+          "count": 70
+        },
+        {
+          "value": "DISTRACCION",
+          "count": 13
+        },
+        {
+          "value": "RIOHACHA",
+          "count": 8
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "BARRANCAS",
+          "count": 1
+        },
+        {
+          "value": "SAN JUAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "ccosto",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 60,
+      "null_count": 2895,
+      "distinct_count": 76,
+      "sample": [
+        1101,
+        1106,
+        1102,
+        1106,
+        1115,
+        1106,
+        1106,
+        1106,
+        1105,
+        1106
+      ]
+    },
+    {
+      "column": "idcontrato",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 61,
+      "null_count": 4452,
+      "distinct_count": 10935,
+      "sample": [
+        "9b2845fc-7abb-4815-906b-d99dd67d4cc8",
+        "6bc212a6-40f5-4cc5-8fb7-f90895fdbac4",
+        "a74ec938-4d8d-4b3f-8db0-46a9acef4936",
+        "3e18a14b-517f-4006-9768-6202a10f71e8",
+        "a7c657c4-2f44-4b47-b8b9-981d5045c08c",
+        "5559e269-8067-4858-8805-7f18bb0ddb40",
+        "2c68805b-0c37-4807-a2d1-5e9284e743be",
+        "4b3a109f-a65a-4671-b418-0085eaeb1716",
+        "b302ba41-87c4-4cd8-937c-c8fd62a91868",
+        "e404ca8f-f376-4be6-9778-139edf1cf66a"
+      ]
+    },
+    {
+      "column": "codestrato",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 62,
+      "null_count": 2138,
+      "distinct_count": 8,
+      "sample": [
+        3,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "distribution": [
+        {
+          "value": 1,
+          "count": 9167
+        },
+        {
+          "value": 2,
+          "count": 3086
+        },
+        {
+          "value": 3,
+          "count": 608
+        },
+        {
+          "value": 4,
+          "count": 262
+        },
+        {
+          "value": 7,
+          "count": 121
+        },
+        {
+          "value": 6,
+          "count": 5
+        },
+        {
+          "value": 0,
+          "count": 1
+        },
+        {
+          "value": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "idperfilcartera",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 63,
+      "null_count": 1146,
+      "distinct_count": 17,
+      "sample": [
+        1,
+        1,
+        11,
+        18,
+        1,
+        21,
+        22,
+        11,
+        1,
+        11
+      ],
+      "distribution": [
+        {
+          "value": 11,
+          "count": 5763
+        },
+        {
+          "value": 1,
+          "count": 4008
+        },
+        {
+          "value": 18,
+          "count": 2921
+        },
+        {
+          "value": 21,
+          "count": 822
+        },
+        {
+          "value": 4,
+          "count": 219
+        },
+        {
+          "value": 5,
+          "count": 113
+        },
+        {
+          "value": 22,
+          "count": 81
+        },
+        {
+          "value": 9,
+          "count": 69
+        },
+        {
+          "value": 8,
+          "count": 48
+        },
+        {
+          "value": 16,
+          "count": 45
+        },
+        {
+          "value": 6,
+          "count": 32
+        },
+        {
+          "value": 10,
+          "count": 32
+        },
+        {
+          "value": 7,
+          "count": 30
+        },
+        {
+          "value": 2,
+          "count": 24
+        },
+        {
+          "value": 12,
+          "count": 18
+        },
+        {
+          "value": 0,
+          "count": 17
+        },
+        {
+          "value": 13,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "idcajapuerto",
+      "data_type": "text",
+      "nullable": "YES",
+      "position": 64,
+      "null_count": 12738,
+      "distinct_count": 1,
+      "sample": [
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}",
+        "{3328,0}"
+      ],
+      "distribution": [
+        {
+          "value": "{3328,0}",
+          "count": 2651
+        }
+      ]
+    },
+    {
+      "column": "valordeudapermanencia",
+      "data_type": "numeric",
+      "nullable": "YES",
+      "position": 65,
+      "null_count": 15388,
+      "distinct_count": 1,
+      "sample": [
+        "0"
+      ],
+      "distribution": [
+        {
+          "value": "0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "finiciopermanencia",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 66,
+      "null_count": 4356,
+      "distinct_count": 641,
+      "sample": [
+        "2026-07-28",
+        "2026-08-13",
+        "2025-05-16",
+        "2026-04-14",
+        "2025-06-27",
+        "2025-03-21",
+        "2025-03-25",
+        "2025-11-22",
+        "2025-10-15",
+        "2025-01-09"
+      ],
+      "min": "1899-12-30",
+      "max": "2026-08-22"
+    },
+    {
+      "column": "ffinalpermanencia",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 67,
+      "null_count": 15389,
+      "distinct_count": 0,
+      "sample": [],
+      "min": null,
+      "max": null,
+      "distribution": []
+    },
+    {
+      "column": "mespermanencia",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 68,
+      "null_count": 15388,
+      "distinct_count": 1,
+      "sample": [
+        0
+      ],
+      "distribution": [
+        {
+          "value": 0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "coordenada",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 69,
+      "null_count": 7568,
+      "distinct_count": 7784,
+      "sample": [
+        "10.762818,-72.999118",
+        "11.073649,-72.75911",
+        "10.76461,-73.010673",
+        "10.763382,-73.00782",
+        "10.782137,-73.00225",
+        "10.76704,-72.990057",
+        "10.764918,-72.997918",
+        "10.903019,-72.891966",
+        "10.767588,-73.007458",
+        "10.762252,-73.007072"
+      ]
+    },
+    {
+      "column": "idperfilcartera_anterior",
+      "data_type": "integer",
+      "nullable": "YES",
+      "position": 70,
+      "null_count": 13039,
+      "distinct_count": 7,
+      "sample": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        1,
+        21,
+        9
+      ],
+      "distribution": [
+        {
+          "value": 21,
+          "count": 1583
+        },
+        {
+          "value": 1,
+          "count": 539
+        },
+        {
+          "value": 11,
+          "count": 201
+        },
+        {
+          "value": 4,
+          "count": 14
+        },
+        {
+          "value": 9,
+          "count": 8
+        },
+        {
+          "value": 8,
+          "count": 4
+        },
+        {
+          "value": 0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "fecharetiroisp",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 71,
+      "null_count": 13040,
+      "distinct_count": 13,
+      "sample": [
+        "2026-05-01",
+        "2026-02-01",
+        "2026-01-02",
+        "2026-03-01",
+        "2026-08-01",
+        "2026-03-01",
+        "2026-03-01",
+        "2026-04-01",
+        "2026-08-01",
+        "2026-05-01"
+      ],
+      "min": "2025-11-01",
+      "max": "2026-08-01",
+      "distribution": [
+        {
+          "value": "2026-01-02",
+          "count": 323
+        },
+        {
+          "value": "2026-03-01",
+          "count": 317
+        },
+        {
+          "value": "2026-08-01",
+          "count": 290
+        },
+        {
+          "value": "2025-11-01",
+          "count": 246
+        },
+        {
+          "value": "2026-02-01",
+          "count": 232
+        },
+        {
+          "value": "2026-07-01",
+          "count": 215
+        },
+        {
+          "value": "2025-12-01",
+          "count": 199
+        },
+        {
+          "value": "2026-06-01",
+          "count": 182
+        },
+        {
+          "value": "2026-05-01",
+          "count": 176
+        },
+        {
+          "value": "2026-04-01",
+          "count": 163
+        },
+        {
+          "value": "2026-02-02",
+          "count": 4
+        },
+        {
+          "value": "2026-04-02",
+          "count": 1
+        },
+        {
+          "value": "2026-01-03",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "column": "messincobro",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 72,
+      "null_count": 15389,
+      "distinct_count": 0,
+      "sample": [],
+      "min": null,
+      "max": null,
+      "distribution": []
+    },
+    {
+      "column": "nuplin_subject_id",
+      "data_type": "character varying",
+      "nullable": "YES",
+      "position": 73,
+      "null_count": 15242,
+      "distinct_count": 146,
+      "sample": [
+        "guajiranet_co_89",
+        "guajiranet_co_112",
+        "guajiranet_co_158",
+        "guajiranet_co_35",
+        "guajiranet_co_82",
+        "guajiranet_co_109",
+        "guajiranet_co_143",
+        "guajiranet_co_41",
+        "guajiranet_co_131",
+        "guajiranet_co_111"
+      ]
+    },
+    {
+      "column": "nuplin_inicia",
+      "data_type": "date",
+      "nullable": "YES",
+      "position": 74,
+      "null_count": 15239,
+      "distinct_count": 35,
+      "sample": [
+        "2026-08-12",
+        "2026-05-29",
+        "2026-08-14",
+        "2026-08-21",
+        "2026-07-14",
+        "2026-08-11",
+        "2026-08-14",
+        "2026-08-20",
+        "2026-07-21",
+        "2026-08-18"
+      ],
+      "min": "2026-05-29",
+      "max": "2026-08-21"
+    },
+    {
+      "column": "nuplin_meses",
+      "data_type": "smallint",
+      "nullable": "YES",
+      "position": 75,
+      "null_count": 15238,
+      "distinct_count": 1,
+      "sample": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "distribution": [
+        {
+          "value": 0,
+          "count": 151
+        }
+      ]
+    }
+  ],
+  "candidate_unique_columns": [],
+  "candidate_composite_keys": [
+    [
+      "nit",
+      "idsuc"
+    ],
+    [
+      "nit",
+      "id"
+    ]
+  ]
+}

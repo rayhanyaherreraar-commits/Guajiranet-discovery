@@ -7,6 +7,7 @@ from scanner.relationships import detect_candidate_relationships
 from scanner.capabilities import build_capability_map
 from scanner.report import build_report
 from scanner.targeted import analyze_table
+from scanner.directed import AUDITS, run_audit
 
 OUT = Path("output"); OUT.mkdir(exist_ok=True)
 
@@ -17,12 +18,23 @@ def save(name, data):
     )
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--mode", choices=["inventory", "profile", "table"], default="inventory")
+parser.add_argument(
+    "--mode",
+    choices=["inventory", "profile", "table", "audit"],
+    default="inventory",
+)
 parser.add_argument("--table", help="Tabla objetivo para --mode table")
+parser.add_argument(
+    "--audit",
+    help="Nombre de auditoría para --mode audit (o 'all')",
+    choices=["all", *sorted(AUDITS)],
+)
 args = parser.parse_args()
 
 if args.mode == "table" and not args.table:
     parser.error("--table es obligatorio cuando --mode table")
+if args.mode == "audit" and not args.audit:
+    parser.error("--audit es obligatorio cuando --mode audit")
 
 with get_connection() as conn:
     if args.mode == "table":
@@ -30,6 +42,11 @@ with get_connection() as conn:
         filename = f"analisis_{args.table}.json"
         save(filename, analysis)
         print(f"Análisis dirigido completado: {OUT / filename}")
+    elif args.mode == "audit":
+        result = run_audit(conn, args.audit)
+        filename = f"audit_{args.audit}.json"
+        save(filename, result)
+        print(f"Auditoría completada: {OUT / filename}")
     else:
         tables = get_tables(conn)
         columns = get_columns(conn)

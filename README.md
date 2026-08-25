@@ -1,42 +1,49 @@
-# GuajiraNet Data Discovery Scanner
+# GuajiraNet Data Discovery
 
-Escáner de solo lectura para descubrir automáticamente qué información existe en Aurora.
+Escáner de solo lectura sobre Aurora PostgreSQL y archivo de discovery para ampliar el modelo dimensional de GuajiraNet.
 
-## Qué hace
-- Inventaría tablas y columnas.
-- Cuenta registros.
-- Mide nulos y valores distintos.
-- Detecta fechas mínima y máxima.
-- Obtiene muestras limitadas.
-- Busca relaciones candidatas.
-- Clasifica datos relacionados con clientes, vinculación, planes, pagos, cartera, estados, retiros y geografía.
+**Leer primero:** [`ESTADO.md`](ESTADO.md) y [`discovery/INDEX.md`](discovery/INDEX.md).
+
+## Qué hace el código
+
+- Inventario de tablas y columnas (`--mode inventory`).
+- Perfil de nulos, cardinalidad, fechas y muestras (`--mode profile`).
+- Análisis de **una** tabla (`--mode table`).
+- Auditorías dirigidas ya usadas en el discovery (`--mode audit`).
+
+Los JSON grandes de corridas nuevas van a `output/` (no se versionan). Los informes cerrados viven en `discovery/`.
 
 ## Seguridad
-El proyecto usa transacciones de solo lectura. Se recomienda además un usuario exclusivo con permisos `SELECT`.
+
+Transacciones de solo lectura (`default_transaction_read_only=on`). Usar un usuario con `SELECT` únicamente.
 
 ## Instalación
-```bash
-python -m venv .venv
-```
 
-Windows:
 ```powershell
+python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 copy .env.example .env
 ```
 
-Completa `.env` con Aurora.
+Completar `.env` con Aurora. No commitear `.env`.
 
 ## Ejecución
-Inventario rápido:
-```bash
+
+```powershell
 python main.py --mode inventory
-```
-
-Perfil completo:
-```bash
 python main.py --mode profile
+python main.py --mode table --table matercerosuc
+python main.py --mode audit --audit all
+python main.py --mode audit --audit lookup_idcontrato
 ```
 
-Los resultados quedan en `output/`.
+SQL equivalente en `sql/auditoria/`.
+
+## Hallazgo rector (2026-08-24)
+
+El Silver actual no es Cliente 360 ISP: es un estrella de facturación ERP más un recorte de cartera. El plan ISP está en `tmjsonplan_server` (`tipo='P'`), no en `tbl_dim_servicio`. Detalle en `discovery/11_model_audit.md`.
+
+## Principio
+
+Primero el dato, después el significado, luego el modelo, al final el dashboard. No inventar indicadores si el campo no existe o no es confiable.

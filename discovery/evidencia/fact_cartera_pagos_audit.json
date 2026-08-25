@@ -1,0 +1,100 @@
+{
+  "read_only": true,
+  "field_meaning_inferred": false,
+  "scope": ["L.1 FACT_CARTERA", "L.2 FACT_PAGOS"],
+  "generated": "2026-08-24",
+  "l1_cartera": {
+    "what_each_is": {
+      "tmcartera": "Bronze open-item AR table with historical versions. 122050 rows; 52494 saldo=0; 49528 docs (idsuc,prefijo,numero). Not a clean journal: saldo=debito-credito on only 17893 rows. Latest per item NK = 80675 rows; latest open (saldo<>0) = 28797.",
+      "stg_fact_cartera": "Silver staging snapshot of OPEN items only (11633 rows, all saldo<>0). One load timestamp 2026-08-24 11:43:14. Exact subset of tbl: 11633/11633.",
+      "tbl_fact_cartera": "Silver published table 15857 rows, all saldo<>0. Full stg plus 4224 NK not in current stg. fecha_actualizacion spans 2026-08-05..2026-08-24 (4 days) → incremental leftover, not a single cut. sk_fact_cartera unique; business NK (sk_cliente,cuenta,ref_doc,ref_num) NOT unique (27 groups / 706 rows). Drops AR document (idsuc,prefijo,numero)."
+    },
+    "row_counts": {
+      "tmcartera": 122050,
+      "tmcartera_saldo_nz": 69556,
+      "tmcartera_latest_nk": 80675,
+      "tmcartera_latest_open": 28797,
+      "stg_fact_cartera": 11633,
+      "tbl_fact_cartera": 15857
+    },
+    "duplicates": {
+      "tmcartera_idsuc_prefijo_numero": {"groups": 9283, "rows": 81805},
+      "tmcartera_nk_item_no_fecha": {"groups": 9776, "rows": 51151},
+      "stg_sk_cliente_cuenta_ref": {"groups": 27, "rows": 706},
+      "tbl_sk_cliente_cuenta_ref": {"groups": 27, "rows": 706},
+      "tbl_plus_sk_tiempo": {"groups": 2, "rows": 4}
+    },
+    "overlap": {
+      "stg_rows_in_tbl": "11633/11633",
+      "tbl_nk_not_in_stg": 4224,
+      "silver_vs_tm_latest_open_both": 10742,
+      "silver_not_in_tm_latest_open": 4436,
+      "silver_saldo_eq_tm_latest": 10683,
+      "silver_no_tm_latest_on_nit_sucursal_cuenta_refs": 3971
+    },
+    "sums_saldo": {
+      "tmcartera_all": "4719579686.37",
+      "tmcartera_latest_open": "541936235.43",
+      "stg": "-1488142536.09",
+      "tbl": "-932117853.01"
+    },
+    "sk_tiempo": {
+      "equals_fecha_vencimiento": 5962,
+      "not_equals": 9895,
+      "note": "sk_tiempo is not the as-of date (fecha_actualizacion is load time)."
+    },
+    "natural_keys": {
+      "tmcartera_document": ["idsuc", "prefijo", "numero"],
+      "tmcartera_item": ["idsuc", "prefijo", "numero", "cuenta", "nit", "sucursal", "ref_doc", "ref_num"],
+      "tmcartera_version": ["fecha"],
+      "silver_incomplete_nk": ["sk_cliente(=nit,idsuc)", "cuenta", "ref_doc", "ref_num"]
+    },
+    "recommendation": {
+      "snapshot": true,
+      "movement_ledger": false,
+      "both": false,
+      "silver_grain": "1 open AR item as-of load: latest tmcartera row per (idsuc,prefijo,numero,cuenta,nit,sucursal,ref_doc,ref_num) WHERE saldo <> 0"
+    }
+  },
+  "l2_pagos": {
+    "what_each_is": {
+      "vpagodiasfactura": "Invoice↔cash-receipt applications. 183646 rows → 115852 distinct (factura, recibo). Duplicate physical rows. pagorc = FULL receipt amount (constant per recibo; 13560 receipts hit >1 invoice). carteraaplicado = amount applied to that invoice. Coverage 109478/212763 invoices. Stale: max rc_fecha 2026-06-16 vs trfacturas max 2026-08-22.",
+      "trpagodigital": "Payment-gateway events. 55529 rows; id unique. 55469 invoices (59 invoice dups). codigo_respuesta: NEQUI 44105, PSE 7781, BANCOLOMBIA_TRAN 2926, CARD 717. 2024-10-05..2026-08-23. All invoices in trfacturas. NOT subset of vpagodias: 26521 invoices and 20082 receipts only in digital.",
+      "vfacturas_abono": "Invoice settlement SNAPSHOT, not a payment event. 173651 rows unique on (ref_doc,ref_num,nit,sucursal,cuenta,plazo). abono+saldo=total 173651/173651. 167780 saldo≈0; 5802 saldo>0. Cannot be FACT_PAGOS grain.",
+      "trformaspago": "197073 rows. NOT treated as payments."
+    },
+    "duplicates": {
+      "vpagodias_factura_recibo": {"groups": 47581, "rows": 115375, "distinct_nk": 115852, "raw": 183646},
+      "trpagodigital_id": {"unique": true, "n": 55529},
+      "trpagodigital_invoice": {"groups": 59, "rows": 119},
+      "vfacturas_abono_nk": {"groups": 0, "n": 173651}
+    },
+    "invoice_coverage": {
+      "trfacturas": 212763,
+      "in_vpagodias": 109478,
+      "invoices_without_vpagodias": 103285,
+      "in_digital": 55469,
+      "vpagodias_and_digital": 28948,
+      "digital_not_in_vpagodias": 26521
+    },
+    "sum_comparison": {
+      "note": "Do not compare raw SUM(pagorc): duplicates + receipt-total repeated per invoice.",
+      "vpagodias_distinct_sum_aplicado": "10549500236.89",
+      "trpagodigital_sum_total": "2761020503.00",
+      "on_28948_invoices_both_after_distinct": {
+        "aplicado_eq_digital": 28838,
+        "pagorc_eq_digital": 28840
+      }
+    },
+    "can_vpagodias_be_primary": {
+      "for_application_events": true,
+      "as_sole_complete_payment_fact": false,
+      "condition": "DISTINCT (idsuc,prefijo,numero,rc_idsuc,rc_prefijo,rc_numero); measure carteraaplicado"
+    },
+    "recommended_grain": {
+      "FACT_PAGO_APLICACION": "1 invoice x 1 cash receipt; NK (idsuc,prefijo,numero,rc_idsuc,rc_prefijo,rc_numero); measure carteraaplicado",
+      "FACT_PAGO_PASARELA": "1 row = trpagodigital.id; measure total",
+      "not_a_payment_fact": "vfacturas_abono"
+    }
+  }
+}
