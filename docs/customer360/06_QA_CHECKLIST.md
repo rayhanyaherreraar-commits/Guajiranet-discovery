@@ -1,5 +1,26 @@
 # Customer 360 — Checklist de QA
 
+## DAX V1 — ejecución 2026-09-14
+
+- [x] Tabla desconectada `KPI Customer360` creada con 9 filas, 3 KPI, PM/PY/YTD, dirección favorable y orden.
+- [x] 15 medidas creadas en `_medidas clientes 360`.
+- [x] 16 escenarios de prueba ejecutados mediante XMLA local.
+- [x] Resultado final: 16 aprobados y 0 fallos.
+- [x] Periodo con datos y periodo sin PM comparable probados.
+- [x] PY, YTD y PYTD probados para los tres KPI.
+- [x] NIT de una sucursal y NIT multisucursal probados.
+- [x] `Clientes Nuevos Observados` cuenta una vez el NIT multisucursal.
+- [x] Ausencia de cliente seleccionado y mensaje de Perfil probados.
+- [x] División por cero conserva `BLANK()` sin error.
+- [x] Filtros directos sobre `dim tiempo dax[Fecha]` no producen errores.
+- [x] Selector PM/PY/YTD devuelve valor y texto coherentes.
+- [x] Semáforo probado con dirección favorable, dirección inversa y límites exactos ±10%.
+- [x] Sin comparativo devuelve texto `Sin comparación` y color gris.
+- [x] Tabla calculada materializada mediante `Calculate` exclusivo después de detectar 9 filas sin procesar.
+- [x] Sin relaciones desde `KPI Customer360`.
+- [x] Sin medidas temporales de cartera ni KPI Total Pagos.
+- [x] PBIX abierto en Power BI Desktop con el modelo modificado correctamente.
+
 ## Visual
 
 - [ ] Tres páginas nuevas en 1366 × 768, 16:9.
